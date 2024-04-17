@@ -1,0 +1,43 @@
+﻿@model List<NewsModel>
+    <div>
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" asp-controller="News" asp-action="Index">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" asp-controller="News" asp-action="UpdateInformation">Update Information</a>
+            </li>
+            <!-- Diğer menü öğeleri -->
+        </ul>
+    </div>
+    <h2>News</h2>
+
+    <form asp-controller="News" asp-action="Index" method="get">
+        <input type="text" name="searchTerm" value="@ViewBag.SearchTerm" placeholder="Search...">
+        <button type="submit">Search</button>
+    </form>
+
+    @foreach (var news in  Model)
+    {
+        <div>
+            <h3>@news.Title</h3>
+            <p>Last Updated: @news.LastUpdatedTime</p>
+        </div>
+    }
+
+    @if (ViewBag.TotalPages > 1)
+    {
+        <div>
+            @for (int i = 1; i <= ViewBag.TotalPages; i++)
+            {
+                if (i == ViewBag.CurrentPage)
+                {
+                    <span>@i</span>
+                }
+                else
+                {
+                    <a href="?page=@i&searchTerm=@ViewBag.SearchTerm">@i</a>
+                }
+            }
+        </div>
+    }
