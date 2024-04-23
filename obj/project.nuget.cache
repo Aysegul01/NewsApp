@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rGY9tfJRVcBTZqDc8N2nYxMt/l78ipe5uvHUQEZfpR1hUgW0mgcd532VAS5gF+1JTmBU+2YzxaQpnBY5VV0wHw==",
+  "dgSpecHash": "J4O1I7KI2sv2IEoetDwX8VPiNC9ESlmmwNdVxjFOntZdFR2M6Hgcqbh+tooHIJE/mscMU1DDP0gsI25pu+5pYA==",
   "success": true,
-  "projectFilePath": "E:\\English work\\NewsApp\\NewsApp\\NewsApp.csproj",
+  "projectFilePath": "C:\\Users\\Ayşegül\\Desktop\\NewsApp\\NewsApp\\NewsApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ayşegül\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Ayşegül\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
